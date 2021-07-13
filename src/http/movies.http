@@ -1,0 +1,32 @@
+GET http://localhost:3000/movies/3
+
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json;
+
+{
+  "id": 123,
+  "title": "123",
+  "year": 2021,
+  "genres": ["123", "123"]
+}
+
+###
+
+DELETE http://localhost:3000/movies/3
+
+
+###
+
+PATCH http://localhost:3000/movies/12
+Content-Type: application/json;
+
+{
+  "name": "Tenet",
+  "director": "Nolan"
+}
+
+###
+
+GET http://localhost:3000/movies/search?year=2021;
